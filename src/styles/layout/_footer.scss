@@ -1,0 +1,161 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-footer {
+  padding-top: 33px;
+
+  .razer-logo {
+    padding-left: 10px;
+  }
+
+  .links {
+    margin-right: 100px;
+    ul {
+      display: flex;
+      font-family: $font-Montserrat-Bold;
+      font-size: 11px;
+      list-style-type: none;
+      padding-top: 10px;
+      padding-left: 0;
+      li {
+        padding-right: 49px;
+      }
+    }
+  }
+
+  .icons {
+    position: relative;
+    .icon {
+      .fab {
+        color: $brand-color;
+      }
+    }
+    .icon-1 {
+      position: absolute;
+      right: 49px;
+    }
+
+    .icon-2 {
+      position: absolute;
+      right: 26px;
+    }
+
+    .icon-3 {
+      position: absolute;
+      right: -9px;
+    }
+  }
+
+  hr {
+    max-width: 64%;
+    background-color: $text-color;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .copy-right {
+    font-family: $font-Montserrat-Regular;
+    font-size: 9px;
+    text-align: center;
+    color: $dark-grey;
+    letter-spacing: 1px;
+  }
+}
+
+//767 - 576
+@include respond-to(sm) {
+  .main-footer {
+    .razer-logo {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      margin-right: 0;
+      ul {
+        li {
+          padding-right: 40px;
+        }
+      }
+    }
+
+    .icons {
+      .icon-1 {
+        bottom: 10px;
+      }
+
+      .icon-2 {
+        bottom: 10px;
+      }
+
+      .icon-3 {
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+//575 - 320
+@include respond-to(xs) {
+  .main-footer {
+    padding-top: 43px;
+
+    .razer-logo {
+      padding-left: 13px;
+    }
+
+    .navigation {
+      margin-left: 25px;
+      .links {
+        margin-top: 11px;
+        margin-left: 10px;
+        ul {  
+          display: flex;
+          flex-direction: column;
+          font-family: $font-Montserrat-Bold;
+          font-size: 14px;
+          list-style-type: none;
+          padding-top: 10px;
+          padding-left: 0;
+          li {
+            padding-right: 0;
+            margin-top: 12px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .icons {
+        margin-top: 26px;
+        .icon-1 {
+          position: static;
+          margin-left: 14px;
+        }
+      
+        .icon-2 {
+          position: static;
+          margin-left: 23px;
+        }
+
+        .icon-3 {
+          position: static;
+          margin-left: 22px;
+        }
+      }
+    }
+
+    hr {
+    max-width: 100%;
+  }
+
+    .copy-right {
+      font-size: 12px;
+      text-align: left;
+      padding-left: 50px;
+      padding-right: 26px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+@include font-face($font-Montserrat-Regular, $base-url + 'fonts/', 'Montserrat-Regular', 'Montserrat-Regular');
+
+@include font-face($font-Montserrat-Medium, $base-url + 'fonts/', 'Montserrat-Medium', 'Montserrat-Medium');
+
+@include font-face($font-Montserrat-Light, $base-url + 'fonts/', 'Montserrat-Light', 'Montserrat-Light');
+
+@include font-face($font-Montserrat-Bold, $base-url + 'fonts/', 'Montserrat-Bold', 'Montserrat-Bold');

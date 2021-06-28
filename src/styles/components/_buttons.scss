@@ -1,0 +1,44 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.custom-btn {
+    padding: 12px 46px;
+    font-family: $font-Montserrat-Bold;
+    font-size:  11px;
+    font-weight: 600;
+    background-color: $brand-color;
+    border-radius: 30px;
+    color: #000;
+}
+
+.custom-btn:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: $brand-color;
+}
+
+.form-btn {
+    padding: 12px 60px;
+}
+
+//575 - 320
+@include respond-to(xs) {
+    .all-product-btn {
+        padding: 10px 25px;
+    }
+
+    .form-btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 12px 120px;
+    }
+
+    .menu-buy-now {
+        font-size:  14px;
+        padding: 20px 125px;
+    }
+}
