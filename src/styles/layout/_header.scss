@@ -121,6 +121,25 @@
     }
 }
 
+//991 - 768 
+@include respond-to(md) {
+    .main-header {
+        .nav-bar {
+            .nav-logo {
+                .razer-logo {
+                    max-width: 150px;
+                }
+            }
+
+            .nav-list {
+                .item {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
 //767 - 576
 @include respond-to(sm) {
     .main-header {

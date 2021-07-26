@@ -65,6 +65,27 @@
   }
 }
 
+//991 - 768 
+@include respond-to(md) {
+  .main-footer {
+    padding-top: 33px;
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+
+      .links {
+        margin-right: 0;
+        ul {
+          li {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
 //767 - 576
 @include respond-to(sm) {
   .main-footer {
@@ -109,6 +130,65 @@
 
     .navigation {
       margin-left: 25px;
+      .links {
+        margin-top: 11px;
+        margin-left: 10px;
+        ul {  
+          display: flex;
+          flex-direction: column;
+          font-family: $font-Montserrat-Bold;
+          font-size: 14px;
+          list-style-type: none;
+          padding-top: 10px;
+          padding-left: 0;
+          li {
+            padding-right: 0;
+            margin-top: 12px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .icons {
+        margin-top: 26px;
+        .icon-1 {
+          position: static;
+          margin-left: 14px;
+        }
+      
+        .icon-2 {
+          position: static;
+          margin-left: 23px;
+        }
+
+        .icon-3 {
+          position: static;
+          margin-left: 22px;
+        }
+      }
+    }
+
+    hr {
+    max-width: 100%;
+  }
+
+    .copy-right {
+      font-size: 12px;
+      text-align: left;
+      padding-left: 50px;
+      padding-right: 26px;
+    }
+  }
+}
+
+@media screen and ( max-width: 320px ) {
+  .main-footer {
+    .razer-logo {
+      padding-left: 13px;
+    }
+
+    .navigation {
+      margin-left: 0;
       .links {
         margin-top: 11px;
         margin-left: 10px;

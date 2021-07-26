@@ -54,7 +54,10 @@
             </a>
             <ul class="sub-menu" id="dropdown">
               <div class="nav-heading">
-                <div class="nav-heading-title">PRODUCTS</div>
+                <div class="nav-heading-title close-product">
+                  <i class="fas fa-chevron-left mr-2"></i>
+                  PRODUCTS
+                </div>
                 <i class="fas fa-times close-product"></i>
               </div>
               <li class="item">
@@ -74,7 +77,10 @@
                     class="fas fa-chevron-right"></i></a>
                 <ul class="sub-menu" id="dropdown-1">
                   <div class="nav-heading">
-                    <div class="nav-heading-title">HEADSETS & AUDIO</div>
+                    <div class="nav-heading-title close-headset">
+                      <i class="fas fa-chevron-left mr-2"></i>
+                      HEADSETS & AUDIO
+                    </div>
                     <i class="fas fa-times close-headset"></i>
                   </div>
                   <li class="item">
@@ -309,7 +315,7 @@
       <div class="container">
         <h2 class="section-other-product-title">EXPLORE OTHER PRODUCTS</h2>
         <div class="row">
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-xl-3 col-lg-6 col-sm-6 column">
             <div class="card">
               <div class="card-img-container">
                 <img src="./assets/images/razer-nari-chroma-logo.png" class="logo" alt="razer-nari-chroma-logo">
@@ -322,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-xl-3 col-lg-6 col-sm-6 column">
             <div class="card">
               <div class="card-img-container">
                 <img src="./assets/images/razer-nari-chroma-logo.png" class="logo" alt="razer-nari-chroma-logo">
@@ -335,7 +341,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-xl-3 col-lg-6 col-sm-6 column">
             <div class="card">
               <div class="card-img-container">
                 <img src="./assets/images/razer-nari-chroma-logo.png" class="logo" alt="razer-nari-chroma-logo">
@@ -348,7 +354,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-xl-3 col-lg-6 col-sm-6 column">
             <div class="card">
               <div class="card-img-container">
                 <img src="./assets/images/razer-nari-chroma-logo.png" class="logo" alt="razer-nari-chroma-logo">
@@ -371,21 +377,27 @@
           <div class="col-lg-6 col-sm-7">
             <h2 class="ask-question-title">ASK A QUESTION</h2>
             <form>
-              <div class="row">
-                <div class="col-lg-5 col-sm-12 col-10 form-group">
-                  <input type="text" class="form-control" placeholder="Name" required>
+              <div class="grid-row-1">
+                <div class="column">
+                  <input type="text" class="form-input" placeholder="Name" required>
                 </div>
-                <div class="col-lg-5 col-sm-12 col-10 form-group">
-                  <input type="number" class="form-control" placeholder="Phone Number" required>
+                <div class="column">
+                  <input type="number" class="form-input" placeholder="Phone Number" required>
                 </div>
-                <div class="col-lg-11 col-sm-12 col-10 form-group">
-                  <input type="email" class="form-control" placeholder="Email Address" required>
+              </div>
+              <div class="grid-row-2">
+                <div class="column">
+                  <input type="email" class="form-input" placeholder="Email Address" required>
                 </div>
-                <div class="col-lg-11 col-sm-12 col-10 form-group">
-                  <input type="text" class="form-control" placeholder="Permanent Address" required>
+              </div>
+              <div class="grid-row-3">
+                <div class="column">
+                  <input type="text" class="form-input" placeholder="Permanent Address" required>
                 </div>
-                <div class="col-lg-11 col-sm-12 col-10 form-group">
-                  <textarea class="form-control" placeholder="Message" rows="5" required></textarea>
+              </div>
+              <div class="grid-row-4">
+                <div class="column">
+                  <textarea class="form-input" placeholder="Message" rows="5" required></textarea>
                 </div>
               </div>
               <button type="submit" class="btn btn-success btn-lg custom-btn form-btn">SEND</button>
@@ -399,11 +411,15 @@
             </div>
             <div class="phone-information">
               <h3 class="info-title">PHONE</h3>
-              <p class="info-text">+1 234 567-8910</p>
+              <p class="info-text">
+                <a class="link" href="tel:1-562-867-5309">1-562-867-5309</a>
+              </p>
             </div>
             <div class="email-information">
               <h3 class="info-title">EMAIL</h3>
-              <p class="info-text">hello@fullstack.com</p>
+              <p class="info-text">
+                <a class="link" href="mailto:someone@yoursite.com">hello@fullstack.com</a>
+              </p>
             </div>
           </div>
         </div>

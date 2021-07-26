@@ -110,6 +110,13 @@ AppName.Modules.ThemeModule = (function () {
       $('.close-headset').on('click', function () {
         $('ul.nav-list .item .sub-menu .item .sub-menu').hide();
       });
+
+      $('.all-product-btn').on('click', function () {
+        $('.column:nth-child(3), .column:nth-child(4)').css("display", "flex");
+        $(this).on('click', function () {
+          $('.column:nth-child(3), .column:nth-child(4)').css("display", "none");
+        })
+      })
     });
   };
 

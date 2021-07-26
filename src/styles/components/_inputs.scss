@@ -1,0 +1,25 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input component.
+// -----------------------------------------------------------------------------
+
+.form-input {
+    padding: 10px;
+    font-family: $font-Montserrat-Regular;
+    font-size: 13px;
+    color: $light-grey;
+    background-color: transparent;
+    border: 1px solid $light-grey;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.form-input::placeholder {
+    color: $light-grey;
+}
+
+textarea {
+    resize: none;
+}
